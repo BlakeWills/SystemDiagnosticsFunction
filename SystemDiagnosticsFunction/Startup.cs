@@ -24,6 +24,8 @@ namespace SystemDiagnosticsFunction
 
         private void RegisterListener()
         {
+            Activity.DefaultIdFormat = ActivityIdFormat.W3C;
+
             _listener = new ActivityListener
             {
                 ShouldListenTo = ShouldListen,
